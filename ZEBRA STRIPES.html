@@ -1,0 +1,104 @@
+<html>
+
+<head>
+	<title>jQuery Zebra Stripes Demonstration</title>
+
+	<script type="text/javascript" src=
+		"https://code.jquery.com/jquery-3.5.1.js">
+	</script>
+
+	<script type="text/javascript">
+		$(function() {
+			$("table tr:nth-child(odd)")
+				.addClass("zebrastripe");
+		});
+	</script>
+
+	<style type="text/css">
+		body,
+		td {
+			font-size: 10pt;
+			text-align: center;
+		}
+		
+		h1 {
+			color: green;
+		}
+		
+		table {
+			background-color: black;
+			border: 1px black solid;
+			border-collapse: collapse;
+		}
+		
+		th {
+			font-size: 15px;
+			padding: 5px 8px;
+			border: 1px outset silver;
+			background-color: rgb(197, 69, 69);
+			color: white;
+		}
+		
+		tr {
+			border: 1px outset silver;
+			padding: 5px 8px;
+			background-color: white;
+			margin: 1px;
+		}
+		
+		tr.zebrastripe {
+			background-color: PINK;
+		}
+		
+		td {
+			border: 0.5px outset silver;
+			border-collapse: collapse;
+			padding: 5px 8px;
+		}
+		
+		.center {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		ZEBRA STRIPES TABLE
+	</h1>
+	<table class="center">
+		<tr>
+			<th>NO.</th>
+			<th>NAME</th>
+			<th>COURSE</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>HARSHIL</td>
+			<td>BCA</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>VANSH</td>
+			<td>BCA</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>DARSHIT</td>
+			<td>BCA</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>AKSHAY</td>
+			<td>BCA</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>RUTVIK</td>
+			<td>BCA</td>
+		</tr>
+	</table>
+</body>
+
+</html>
