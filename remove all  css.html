@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>
+		How to remove all CSS classes using jQuery?
+	</title>
+
+	<style>
+		.har1 {
+			color: rgb(61, 227, 242);
+		}
+
+		.har2 {
+			font-size: 30px;
+			font-weight: bold;
+		}
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	
+</head>
+
+<body style="text-align: center;">
+	<h1 style="color: rgb(62, 233, 245);">
+		Remove All  CSS
+	</h1>
+
+	<h3>
+		remove all CSS classes using jQuery
+	</h3>
+
+	<p class="har1 har2">
+	    harshil makvana
+	</p>
+
+	<button>Click</button>
+    <script>
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("p").removeClass();
+			});
+		});
+	</script>
+</body>
+
+</html>
