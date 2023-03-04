@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		How to disable HTML links
+		using JavaScript
+	</title>
+
+	<style>
+		a.disabled {
+			pointer-events: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1 style="color:rgb(249, 75, 40);">
+		link using jquery 
+	</h1>
+
+	<a href="#" id="GFG_UP">
+		LINK
+	</a>
+
+	<br><br>
+
+	<button onclick="har()">
+		disable
+	</button>
+
+	<p id="GFG_DOWN" style="color:rgb(252, 95, 28);
+		font-size: 20px; font-weight: bold;">
+	</p>
+
+	<script>
+		var link = document.getElementById('GFG_UP');
+		var down = document.getElementById('GFG_DOWN');
+		
+		function har() {
+		link.setAttribute("class", "disabled");
+		link.setAttribute("style", "color: black;");
+		down.innerHTML = "Link disabled";
+		}		
+	</script>
+</body>
+
+</html>
