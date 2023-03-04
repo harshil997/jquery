@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		Remove certain property for all objects
+		in array with JavaScript.
+	</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script>
+</head>
+
+<body style="text-align:center;">
+
+	<h1 style="color: rgb(249, 104, 7)">
+		ARRAY
+	</h1>
+
+	<p id="GFG_UP"></p>
+
+	<button onclick="gfg_Run()">
+		Click
+	</button>
+
+	<p id="GFG_DOWN" style="color:rgb(14, 235, 251);"></p>
+
+	<script>
+		var el_up = document.getElementById("GFG_UP");
+		var el_down = document.getElementById("GFG_DOWN");
+		var arr = ["APPLE", "BANANA", "GRAPS", "WATERMELAN"];
+		var remEl = "Geek";
+		el_up.innerHTML = "Click on the button to perform " + "the operation.<br>Array - [" + arr + "]";
+				
+		function gfg_Run() {
+			var arr2 = $(arr).not([remEl]).get();
+			el_down.innerHTML = "[" + arr2 + "]";
+		}
+	</script>
+</body>
+
+</html>
