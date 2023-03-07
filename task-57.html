@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Slide-Up and Slide-Down Effects with Different Speeds</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #68caeb;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $(".upbtn").click(function(){
+        $("p.normals").slideUp();
+        $("p.fasts").slideUp("fast");
+        $("p.slows").slideUp("slow");
+        $("p.veryfast").slideUp(50);
+        $("p.veryslow").slideUp(2000);
+    });
+    
+    $(".downbtn").click(function(){
+        $("p.normals").slideDown();
+        $("p.fasts").slideDown("fast");
+        $("p.slows").slideDown("slow");
+        $("p.veryfast").slideDown(50);
+        $("p.veryslow").slideDown(2000);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="upbtn">Slide Up Paragraphs</button> 
+    <button type="button" class="downbtn">Slide Down Paragraphs</button>
+    <p class="veryfast">hello world how are you.</p>
+    <p class="normals">hello world how are you.</p>
+    <p class="fasts">hello world how are you.</p>
+    <p class="slows">hello world how are you.</p>
+    <p class="veryslow">hello world how are you.</p>
+</body>
+</html>

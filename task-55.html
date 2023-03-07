@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Fade-To Effect</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        display: none;
+        padding: 15px;
+        background: #57c6eb;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $(".to-btn").click(function(){
+        $("p.none").fadeTo("fast", 0);
+        $("p.partial").fadeTo("slow", 0.5);
+        $("p.complete").fadeTo(2000, 1);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="to-btn">Fade To Hidden Paragraphs</button>
+    <p class="none">hello world how are you.</p>
+    <p class="partial">hello  world how are you.</p>
+    <p class="complete">hello world how are you.</p>
+</body>
+</html>                                		
