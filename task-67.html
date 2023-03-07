@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Method Chaining Exceptions</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    .test{
+		padding: 15px;
+        background: rgb(87, 211, 236);
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+      
+        $("h1").html("How are you").addClass("test").fadeOut(1000);
+        
+  
+        $("p").html().addClass("test");
+    });
+});
+</script>
+</head>
+<body>
+    <h1>hello world.</h1>
+    <p>Im a bca students in silver oak university</p>
+    <button type="button">Start Chaining</button>
+</body>
+</html>
